@@ -36,6 +36,14 @@ app.get('/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    ok: true,
+    message: 'El servidor está corriendo correctamente'
+  });
+});
+
 // Manejo de errores
 app.use((err, req, res, next) => {
   console.error(' Error:', err);
