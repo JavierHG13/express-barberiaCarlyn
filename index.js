@@ -1,4 +1,4 @@
-import app from './src/app.js';
+import app from './src/main.js';
 import { initDatabase } from './src/config/database.js';
 import dotenv from 'dotenv';
 
